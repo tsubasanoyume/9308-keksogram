@@ -19,7 +19,7 @@
     }
 
     previewImage.className = 'filter-image-preview' + ' ' + filterMap[selectedFilter.value];
-  };
+  }
 
   for (var i = 0, l = selectedFilter.length; i < l; i++) {
     selectedFilter[i].onchange = function(evt) {
@@ -40,7 +40,7 @@
 
     uploadForm.classList.remove('invisible');
     filterForm.classList.add('invisible');
-  }
+  };
 
   setFilter();
 })();
